@@ -1,0 +1,12 @@
+# SEO Friendly URL & Performance Optimization for Apache / XAMPP
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^beranda$ index.php?page=landing [L,QSA]
+    RewriteRule ^verifikasi-slip$ index.php?page=verify [L,QSA]
+    RewriteRule ^login$ index.php?page=login [L,QSA]
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>

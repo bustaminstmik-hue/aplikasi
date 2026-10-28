@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /index.php?page=landing
+Allow: /index.php?page=verify
+Disallow: /storage/
+Disallow: /config/
+
+Sitemap: /sitemap.php
